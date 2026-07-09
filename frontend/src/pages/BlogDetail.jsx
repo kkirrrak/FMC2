@@ -9,8 +9,8 @@ export default function BlogDetail() {
     const post = findPost(slug);
     useSeo({
         title: post
-            ? `${post.title} | FixMyCar Hyderabad`
-            : "FixMyCar Blog",
+            ? `${post.title} | FixMyCarHub Hyderabad`
+            : "FixMyCarHub Blog",
         description: post?.excerpt,
         keywords: post?.keywords,
         image: post?.cover,
@@ -39,7 +39,7 @@ export default function BlogDetail() {
                         },
                         publisher: {
                             "@type": "Organization",
-                            name: "FixMyCar",
+                            name: "FixMyCarHub",
                             logo: {
                                 "@type": "ImageObject",
                                 url: `${typeof window !== "undefined" ? window.location.origin : ""}/logo.png`,

@@ -7,7 +7,7 @@ export const BLOG_POSTS = [
             "Everything Hyderabad drivers need to know about car service — pricing, timelines, doorstep repair, and how to pick the right workshop for your car.",
         cover:
             "https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        author: "FixMyCar Editorial",
+        author: "FixMyCarHub Editorial",
         date: "December 8, 2025",
         readMinutes: 7,
         tags: ["Hyderabad", "Car Service", "Buying Guide"],
@@ -20,7 +20,7 @@ export const BLOG_POSTS = [
             },
             {
                 h: "How much does car service cost in Hyderabad?",
-                p: "At FixMyCar we keep it simple: a flat ₹599 inspection charge, no matter where your car is — home, roadside, garage, office or apartment. Repair charges depend on parts, labour and complexity. Nothing is opened or replaced without your explicit approval and a written estimate.",
+                p: "At FixMyCarHub we keep it simple: a flat ₹599 inspection charge, no matter where your car is — home, roadside, garage, office or apartment. Repair charges depend on parts, labour and complexity. Nothing is opened or replaced without your explicit approval and a written estimate.",
             },
             {
                 h: "Doorstep vs workshop service",
@@ -28,7 +28,7 @@ export const BLOG_POSTS = [
             },
             {
                 h: "How to choose the right car service in Hyderabad",
-                p: "Look for four things — certified technicians, OEM parts, transparent quoting before any work, and a written warranty on eligible repairs. Ask if the shop provides a photo/video report of the diagnostic. FixMyCar delivers all four — plus a WhatsApp-native experience for booking and updates.",
+                p: "Look for four things — certified technicians, OEM parts, transparent quoting before any work, and a written warranty on eligible repairs. Ask if the shop provides a photo/video report of the diagnostic. FixMyCarHub delivers all four — plus a WhatsApp-native experience for booking and updates.",
             },
         ],
     },
@@ -39,7 +39,7 @@ export const BLOG_POSTS = [
             "Stranded on the Outer Ring Road or in city traffic? Follow this proven 6-step checklist to stay safe and get help fast.",
         cover:
             "https://images.pexels.com/photos/8931963/pexels-photo-8931963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        author: "FixMyCar Rescue Team",
+        author: "FixMyCarHub Rescue Team",
         date: "December 6, 2025",
         readMinutes: 5,
         tags: ["SOS", "Roadside", "Hyderabad", "Safety"],
@@ -59,7 +59,7 @@ export const BLOG_POSTS = [
                 p: "Every year fatal accidents happen when drivers change tyres on active shoulders. Wait for professional help — it's always cheaper than a hospital bill.",
             },
             {
-                h: "Step 4 — Call FixMyCar SOS",
+                h: "Step 4 — Call FixMyCarHub SOS",
                 p: "Our 24×7 dispatch line reaches Hyderabad, Secunderabad, Gachibowli, Madhapur, Kondapur, Kukatpally, Banjara Hills, Jubilee Hills, Hitech City, Miyapur, Ameerpet and LB Nagar in a 30-minute average.",
             },
             {
@@ -79,7 +79,7 @@ export const BLOG_POSTS = [
             "Slow cranking, dim headlights, clicking sounds — here are the exact warning signs and how a doorstep battery test in Hyderabad works.",
         cover:
             "https://images.pexels.com/photos/1409999/pexels-photo-1409999.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        author: "FixMyCar Electrical Team",
+        author: "FixMyCarHub Electrical Team",
         date: "December 4, 2025",
         readMinutes: 4,
         tags: ["Battery", "Electrical", "Doorstep"],
@@ -108,7 +108,7 @@ export const BLOG_POSTS = [
             },
             {
                 h: "How to book a doorstep battery test",
-                p: "FixMyCar arrives at your home or office within 30 minutes across Hyderabad. We load-test with a professional carbon-pile tester and replace only if needed — using genuine Exide, Amaron or OEM batteries with warranty.",
+                p: "FixMyCarHub arrives at your home or office within 30 minutes across Hyderabad. We load-test with a professional carbon-pile tester and replace only if needed — using genuine Exide, Amaron or OEM batteries with warranty.",
             },
         ],
     },
@@ -119,7 +119,7 @@ export const BLOG_POSTS = [
             "A no-nonsense comparison of when to book a mobile mechanic in Hyderabad and when to bring the car to a workshop.",
         cover:
             "https://images.pexels.com/photos/4489794/pexels-photo-4489794.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        author: "FixMyCar Editorial",
+        author: "FixMyCarHub Editorial",
         date: "December 2, 2025",
         readMinutes: 5,
         tags: ["Doorstep", "Comparison"],
@@ -135,7 +135,7 @@ export const BLOG_POSTS = [
                 p: "Wheel alignment/balancing, painting, denting, ECU flashing, gearbox overhaul, clutch replacement, engine rebuild and full detailing need hydraulic lifts, spray booths and specialist tooling only a workshop provides.",
             },
             {
-                h: "The FixMyCar recommendation",
+                h: "The FixMyCarHub recommendation",
                 p: "Book a ₹599 doorstep inspection first. Our technician gives you a written call — 82% of jobs finish at your parking. Only the rest need a workshop, and we arrange free pick-up-and-drop for those.",
             },
         ],
@@ -147,7 +147,7 @@ export const BLOG_POSTS = [
             "Hyderabad summers hit 42°C. Here's when to service your AC, what components fail most often and how much genuine service costs.",
         cover:
             "https://images.pexels.com/photos/8985457/pexels-photo-8985457.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        author: "FixMyCar HVAC Team",
+        author: "FixMyCarHub HVAC Team",
         date: "November 28, 2025",
         readMinutes: 6,
         tags: ["AC", "Hyderabad", "Summer"],
@@ -164,7 +164,7 @@ export const BLOG_POSTS = [
             },
             {
                 h: "Doorstep AC service in Hyderabad",
-                p: "FixMyCar performs full AC service at your doorstep in about 60 minutes — vacuuming, gas top-up, cabin filter, blower cleaning and cooling test. Complex compressor jobs go to our workshop.",
+                p: "FixMyCarHub performs full AC service at your doorstep in about 60 minutes — vacuuming, gas top-up, cabin filter, blower cleaning and cooling test. Complex compressor jobs go to our workshop.",
             },
         ],
     },
@@ -172,10 +172,10 @@ export const BLOG_POSTS = [
         slug: "pre-purchase-car-inspection-checklist",
         title: "Buying a Used Car in Hyderabad? Use This 120-Point Inspection Checklist",
         excerpt:
-            "Don't inherit someone else's headache. Here's the exact 120-point pre-purchase inspection FixMyCar runs before you sign anything.",
+            "Don't inherit someone else's headache. Here's the exact 120-point pre-purchase inspection FixMyCarHub runs before you sign anything.",
         cover:
             "https://images.pexels.com/photos/4489732/pexels-photo-4489732.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        author: "FixMyCar Editorial",
+        author: "FixMyCarHub Editorial",
         date: "November 25, 2025",
         readMinutes: 8,
         tags: ["Pre-Purchase", "Buying Guide"],
@@ -211,7 +211,7 @@ export const BLOG_POSTS = [
             "That squeaking sound isn't decorative. Here's how brake pads warn you before they fail — and what to do about it.",
         cover:
             "https://images.unsplash.com/photo-1696494561430-de087dd0bd69?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxjYXIlMjBicmFrZXN8ZW58MHx8fHwxNzgzNTQ3OTQwfDA&ixlib=rb-4.1.0&q=85",
-        author: "FixMyCar Safety Team",
+        author: "FixMyCarHub Safety Team",
         date: "November 22, 2025",
         readMinutes: 4,
         tags: ["Brakes", "Safety"],
@@ -255,7 +255,7 @@ export const BLOG_POSTS = [
             "From waterlogged basements to Cyberabad flyover puddles — here's how to protect your car (and yourself) during Hyderabad monsoons.",
         cover:
             "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1600&q=80",
-        author: "FixMyCar Editorial",
+        author: "FixMyCarHub Editorial",
         date: "November 18, 2025",
         readMinutes: 5,
         tags: ["Monsoon", "Hyderabad", "Care"],
@@ -280,7 +280,7 @@ export const BLOG_POSTS = [
             },
             {
                 h: "5. Never attempt to restart a submerged car",
-                p: "Hydrolock can bend piston rods. Call FixMyCar for towing instead.",
+                p: "Hydrolock can bend piston rods. Call FixMyCarHub for towing instead.",
             },
         ],
     },

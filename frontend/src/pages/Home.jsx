@@ -30,19 +30,19 @@ const HERO_STATS = [
 const HERO_SLIDES = [
     {
         img: "https://images.unsplash.com/photo-1722385640799-4ee84eb90038?crop=entropy&cs=srgb&fm=jpg&q=85&w=1900",
-        alt: "Premium luxury car in a darkened studio — FixMyCar doorstep car care",
+        alt: "Premium luxury car in a darkened studio — FixMyCarHub doorstep car care",
     },
     {
         img: "https://images.unsplash.com/photo-1696494561430-de087dd0bd69?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxjYXIlMjBicmFrZXN8ZW58MHx8fHwxNzgzNTQ3OTQwfDA&ixlib=rb-4.1.0&q=85&w=1900",
-        alt: "Certified technician inspecting brakes — FixMyCar precision repair",
+        alt: "Certified technician inspecting brakes — FixMyCarHub precision repair",
     },
     {
         img: "https://images.unsplash.com/photo-1725289339928-06ee31684df5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxjYXIlMjBlbmdpbmV8ZW58MHx8fHwxNzgzNTQ3OTQwfDA&ixlib=rb-4.1.0&q=85&w=1900",
-        alt: "Engine diagnostics in progress — FixMyCar certified mechanics",
+        alt: "Engine diagnostics in progress — FixMyCarHub certified mechanics",
     },
 ];
 
-// Working process — FixMyCar's real doorstep-first flow
+// Working process — FixMyCarHub's real doorstep-first flow
 const WORK_STEPS = [
     { n: "01", icon: Calendar, t: "Book Now", d: "Fill the 30-second form or tap SOS — details land straight on our WhatsApp." },
     { n: "02", icon: ShieldCheck, t: "Vehicle Inspection", d: "A certified mechanic inspects your car at home, office or roadside for a flat ₹599." },
@@ -61,7 +61,7 @@ export default function Home() {
     }, []);
     useSeo({
         title:
-            "FixMyCar — Premium Car Repair & 24×7 Roadside Assistance in Hyderabad",
+            "FixMyCarHub — Premium Car Repair & 24×7 Roadside Assistance in Hyderabad",
         description:
             "Certified doorstep car service in Hyderabad, Secunderabad, Gachibowli, Madhapur, Kondapur & more. Flat ₹599 inspection, 24×7 roadside SOS, transparent quotes and warranty on eligible repairs.",
         keywords:
@@ -86,8 +86,8 @@ export default function Home() {
                             }`}
                         />
                     ))}
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/95" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/45 to-transparent md:from-black md:via-black/70 md:to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/80" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/92 via-black/55 to-transparent md:from-black/95 md:via-black/40 md:to-transparent" />
                 </div>
                 <div className="headlight-glow -top-40 -left-40" />
                 <div className="headlight-glow top-1/3 -right-40" />
@@ -237,8 +237,8 @@ export default function Home() {
             </section>
 
             {/* MARQUEE STRIP */}
-            <section className="border-y border-white/5 bg-black py-4 overflow-hidden">
-                <div className="marquee-track gap-16 whitespace-nowrap text-white/40 text-sm uppercase tracking-widest">
+            <section className="border-y border-gray-200 bg-gray-50 py-4 overflow-hidden">
+                <div className="marquee-track gap-16 whitespace-nowrap text-brand-black/50 text-sm uppercase tracking-widest">
                     {Array.from({ length: 2 }).map((_, r) => (
                         <div key={r} className="flex items-center gap-16 pr-16">
                             {[
@@ -262,7 +262,7 @@ export default function Home() {
             </section>
 
             {/* SERVICES */}
-            <section className="relative py-24 md:py-32 px-6">
+            <section className="relative py-24 md:py-32 px-6 bg-white text-brand-black">
                 <div className="max-w-7xl mx-auto">
                     <Reveal>
                         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -270,14 +270,14 @@ export default function Home() {
                                 <Eyebrow>01 — Services</Eyebrow>
                                 <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95] max-w-3xl">
                                     Every service your car will{" "}
-                                    <span className="italic text-white/80">ever</span>{" "}
+                                    <span className="italic text-brand-black/60">ever</span>{" "}
                                     need.
                                 </h2>
                             </div>
                             <Link
                                 to="/services"
                                 data-testid="home-view-all-services"
-                                className="inline-flex self-start md:self-end items-center gap-2 text-white/80 hover:text-brand-yellow transition"
+                                className="inline-flex self-start md:self-end items-center gap-2 text-brand-black/70 hover:text-brand-yellow transition"
                             >
                                 View all services <ArrowRight size={16} />
                             </Link>
@@ -294,14 +294,13 @@ export default function Home() {
             </section>
 
             {/* WORKING PROCESS */}
-            <section className="relative py-24 md:py-32 px-6 bg-brand-charcoal/40 border-y border-white/5 overflow-hidden">
-                <div className="headlight-glow top-0 right-1/4" />
+            <section className="relative py-24 md:py-32 px-6 bg-gray-50 border-y border-gray-200 overflow-hidden">
                 <div className="max-w-7xl mx-auto relative text-center">
                     <Reveal>
                         <Eyebrow className="!inline-flex mx-auto justify-center">
                             How It Works
                         </Eyebrow>
-                        <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95]">
+                        <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95] text-brand-black">
                             From SOS to sorted{" "}
                             <span className="text-yellow-gradient">in four steps.</span>
                         </h2>
@@ -335,18 +334,19 @@ export default function Home() {
             </section>
 
             {/* PRICING TRANSPARENCY */}
-            <section className="relative py-24 md:py-32 px-6 overflow-hidden">
-                <div className="headlight-glow bottom-0 left-1/2 -translate-x-1/2" />
+            <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-white text-brand-black">
                 <div className="max-w-5xl mx-auto text-center relative">
                     <Reveal>
-                        <Eyebrow>02 — Transparent Pricing</Eyebrow>
+                        <Eyebrow className="!inline-flex mx-auto justify-center">
+                            02 — Transparent Pricing
+                        </Eyebrow>
                         <h2 className="font-display text-4xl md:text-6xl font-bold leading-tight">
                             One honest inspection charge.
                             <br />
                             <span className="text-yellow-gradient">₹599 fixed.</span>{" "}
                             Everywhere.
                         </h2>
-                        <p className="text-white/60 mt-6 max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-brand-black/60 mt-6 max-w-2xl mx-auto leading-relaxed">
                             Whether the car is at home, on the roadside, in our garage,
                             your office or apartment — inspection is a flat ₹599.
                             Repairs are quoted transparently after inspection and
@@ -359,7 +359,7 @@ export default function Home() {
                                 (l) => (
                                     <div
                                         key={l}
-                                        className="glass rounded-2xl py-4 px-2 text-sm text-white/80"
+                                        className="card-light rounded-2xl py-4 px-2 text-sm text-brand-black/80"
                                     >
                                         <MapPin
                                             size={16}
@@ -372,7 +372,7 @@ export default function Home() {
                         </div>
                     </Reveal>
                     <Reveal delay={0.25}>
-                        <div className="mt-8 text-xs text-white/50 max-w-xl mx-auto">
+                        <div className="mt-8 text-xs text-brand-black/45 max-w-xl mx-auto">
                             Additional repair charges depend on parts, labour and
                             complexity. Customer approval is mandatory before any
                             repair begins.
@@ -382,13 +382,13 @@ export default function Home() {
             </section>
 
             {/* WHY CHOOSE US */}
-            <section className="relative py-24 md:py-32 px-6 bg-brand-charcoal/40 border-y border-white/5">
+            <section className="relative py-24 md:py-32 px-6 bg-gray-50 border-y border-gray-200">
                 <div className="max-w-7xl mx-auto">
                     <Reveal>
-                        <Eyebrow>03 — Why FixMyCar</Eyebrow>
-                        <h2 className="font-display text-4xl md:text-6xl font-bold max-w-3xl leading-[0.95]">
+                        <Eyebrow>03 — Why FixMyCarHub</Eyebrow>
+                        <h2 className="font-display text-4xl md:text-6xl font-bold max-w-3xl leading-[0.95] text-brand-black">
                             Built for people who don’t{" "}
-                            <span className="italic text-white/80">tolerate</span>{" "}
+                            <span className="italic text-brand-black/60">tolerate</span>{" "}
                             surprises.
                         </h2>
                     </Reveal>
@@ -404,15 +404,15 @@ export default function Home() {
                             { icon: Zap, t: "Original Parts", d: "OEM parts by default — options if you prefer." },
                         ].map((b, i) => (
                             <Reveal key={i} delay={i * 0.05}>
-                                <div className="glass rounded-2xl md:rounded-3xl p-3.5 md:p-6 h-full hover:border-brand-yellow/40 transition group">
-                                    <div className="w-9 h-9 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-brand-yellow/15 border border-brand-yellow/30 flex items-center justify-center text-brand-yellow group-hover:bg-brand-yellow group-hover:text-white transition">
+                                <div className="card-light rounded-2xl md:rounded-3xl p-3.5 md:p-6 h-full hover:border-brand-yellow/40 transition group">
+                                    <div className="w-9 h-9 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center text-brand-yellow group-hover:bg-brand-yellow group-hover:text-white transition">
                                         <b.icon size={18} className="md:hidden" />
                                         <b.icon size={22} className="hidden md:block" />
                                     </div>
-                                    <h3 className="font-display text-sm md:text-xl font-bold mt-3 md:mt-5">
+                                    <h3 className="font-display text-sm md:text-xl font-bold mt-3 md:mt-5 text-brand-black">
                                         {b.t}
                                     </h3>
-                                    <p className="text-white/60 text-xs md:text-sm mt-1.5 md:mt-2 leading-relaxed">
+                                    <p className="text-brand-black/55 text-xs md:text-sm mt-1.5 md:mt-2 leading-relaxed">
                                         {b.d}
                                     </p>
                                 </div>
@@ -423,7 +423,7 @@ export default function Home() {
             </section>
 
             {/* TESTIMONIALS */}
-            <section className="relative py-24 md:py-32 px-6">
+            <section className="relative py-24 md:py-32 px-6 bg-white text-brand-black">
                 <div className="max-w-7xl mx-auto">
                     <Reveal>
                         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -442,7 +442,7 @@ export default function Home() {
                             <Reveal key={i} delay={i * 0.05}>
                                 <div
                                     data-testid={`testimonial-${i}`}
-                                    className="rounded-3xl p-6 md:p-7 bg-gradient-to-b from-brand-charcoal to-black border border-white/5 h-full flex flex-col"
+                                    className="card-light rounded-3xl p-6 md:p-7 h-full flex flex-col"
                                 >
                                     <div className="flex items-center gap-1 mb-4">
                                         {Array.from({ length: t.rating }).map((_, k) => (
@@ -453,20 +453,20 @@ export default function Home() {
                                             />
                                         ))}
                                     </div>
-                                    <p className="text-white/85 text-base leading-relaxed flex-1">
+                                    <p className="text-brand-black/75 text-base leading-relaxed flex-1">
                                         “{t.text}”
                                     </p>
                                     <div className="mt-6 flex items-center gap-3">
                                         <img
                                             src={t.photo}
                                             alt={t.name}
-                                            className="w-10 h-10 rounded-full object-cover border border-white/10"
+                                            className="w-10 h-10 rounded-full object-cover border border-black/10"
                                         />
                                         <div>
-                                            <div className="text-white font-semibold text-sm">
+                                            <div className="text-brand-black font-semibold text-sm">
                                                 {t.name}
                                             </div>
-                                            <div className="text-white/50 text-xs">
+                                            <div className="text-brand-black/45 text-xs">
                                                 {t.car} • {t.city}
                                             </div>
                                         </div>
@@ -479,12 +479,12 @@ export default function Home() {
             </section>
 
             {/* SERVICE AREAS */}
-            <section className="relative py-24 md:py-32 px-6 bg-brand-charcoal/40 border-y border-white/5">
+            <section className="relative py-24 md:py-32 px-6 bg-gray-50 border-y border-gray-200">
                 <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
                     <Reveal>
                         <div>
                             <Eyebrow>05 — Service Areas</Eyebrow>
-                            <h2 className="font-display text-4xl md:text-5xl font-bold leading-[0.95]">
+                            <h2 className="font-display text-4xl md:text-5xl font-bold leading-[0.95] text-brand-black">
                                 Doorstep across{" "}
                                 <span className="text-yellow-gradient">
                                     Hyderabad
@@ -510,7 +510,7 @@ export default function Home() {
                                 ].map((a) => (
                                     <span
                                         key={a}
-                                        className="px-4 py-2 rounded-full border border-white/10 bg-white/[0.03] text-white/80 text-sm"
+                                        className="px-4 py-2 rounded-full border border-black/10 bg-white text-brand-black/75 text-sm"
                                     >
                                         {a}
                                     </span>
@@ -519,9 +519,9 @@ export default function Home() {
                         </div>
                     </Reveal>
                     <Reveal delay={0.1}>
-                        <div className="rounded-3xl overflow-hidden border border-white/10 aspect-[4/3] bg-black">
+                        <div className="rounded-3xl overflow-hidden border border-black/10 aspect-[4/3] bg-black">
                             <iframe
-                                title="FixMyCar Service Areas"
+                                title="FixMyCarHub Service Areas"
                                 src="https://www.google.com/maps?q=Hyderabad,%20Telangana&output=embed"
                                 className="w-full h-full grayscale contrast-125"
                                 loading="lazy"
@@ -532,17 +532,23 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* BOOKING CTA */}
-            <section id="book" className="relative py-24 md:py-32 px-6">
-                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+            {/* BOOKING CTA — red accent section, matches reference */}
+            <section id="book" className="relative py-24 md:py-32 px-6 bg-gradient-to-br from-brand-yellow via-red-700 to-brand-black overflow-hidden">
+                <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start relative">
                     <Reveal>
-                        <Eyebrow>06 — Book Now</Eyebrow>
-                        <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95]">
+                        <div className="inline-flex items-center gap-2.5 text-white text-xs md:text-sm font-semibold uppercase tracking-[0.25em] mb-3">
+                            <span className="flex items-center gap-1.5">
+                                <span className="w-1.5 h-1.5 rounded-full bg-white" />
+                                <span className="w-6 md:w-8 h-px bg-white/60" />
+                            </span>
+                            06 — Book Now
+                        </div>
+                        <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95] text-white">
                             30-second booking.{" "}
-                            <span className="italic text-white/70">Instant</span>{" "}
+                            <span className="italic text-white/80">Instant</span>{" "}
                             WhatsApp confirmation.
                         </h2>
-                        <p className="text-white/60 mt-6 leading-relaxed">
+                        <p className="text-white/80 mt-6 leading-relaxed">
                             Fill the form and we’ll continue on WhatsApp — share
                             photos, confirm the slot, get the ₹599 inspection scheduled.
                         </p>
@@ -556,9 +562,9 @@ export default function Home() {
                                 <div key={l} className="flex items-start gap-3">
                                     <CheckCircle2
                                         size={20}
-                                        className="text-brand-yellow shrink-0 mt-0.5"
+                                        className="text-white shrink-0 mt-0.5"
                                     />
-                                    <span className="text-white/80">{l}</span>
+                                    <span className="text-white/90">{l}</span>
                                 </div>
                             ))}
                         </div>
@@ -570,13 +576,13 @@ export default function Home() {
             </section>
 
             {/* FAQ */}
-            <section className="relative py-24 md:py-32 px-6 bg-brand-charcoal/40 border-y border-white/5">
+            <section className="relative py-24 md:py-32 px-6 bg-white text-brand-black">
                 <div className="max-w-4xl mx-auto">
                     <Reveal>
                         <Eyebrow>07 — Frequently Asked</Eyebrow>
                         <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95] mb-10">
                             Straight answers.{" "}
-                            <span className="italic text-white/80">No fine print.</span>
+                            <span className="italic text-brand-black/60">No fine print.</span>
                         </h2>
                     </Reveal>
                     <script
@@ -606,15 +612,15 @@ export default function Home() {
                             <AccordionItem
                                 key={i}
                                 value={`item-${i}`}
-                                className="glass rounded-2xl px-5 border-white/10"
+                                className="card-light rounded-2xl px-5"
                             >
                                 <AccordionTrigger
-                                    className="text-left text-white font-semibold hover:no-underline py-5"
+                                    className="text-left text-brand-black font-semibold hover:no-underline py-5"
                                     data-testid={`faq-trigger-${i}`}
                                 >
                                     {f.q}
                                 </AccordionTrigger>
-                                <AccordionContent className="text-white/70 leading-relaxed pb-5">
+                                <AccordionContent className="text-brand-black/65 leading-relaxed pb-5">
                                     {f.a}
                                 </AccordionContent>
                             </AccordionItem>

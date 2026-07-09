@@ -22,7 +22,7 @@ export default function useSeo({ title, description, keywords, image, path }) {
         setMeta("og:title", title, "property");
         setMeta("og:description", description, "property");
         setMeta("og:type", "website", "property");
-        setMeta("og:site_name", "FixMyCar", "property");
+        setMeta("og:site_name", "FixMyCarHub", "property");
         if (image) setMeta("og:image", image, "property");
         setMeta("twitter:card", "summary_large_image");
         setMeta("twitter:title", title);

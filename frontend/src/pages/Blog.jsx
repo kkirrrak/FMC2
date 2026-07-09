@@ -7,7 +7,7 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 export default function Blog() {
     useSeo({
         title:
-            "FixMyCar Blog — Car Repair, Maintenance & Roadside Tips in Hyderabad",
+            "FixMyCarHub Blog — Car Repair, Maintenance & Roadside Tips in Hyderabad",
         description:
             "Expert car care advice, doorstep repair tips, roadside SOS guides, service pricing and maintenance checklists for Hyderabad drivers. Updated weekly.",
         keywords:
@@ -28,7 +28,7 @@ export default function Blog() {
                 <div className="max-w-7xl mx-auto relative">
                     <Reveal>
                         <div className="text-brand-yellow text-xs uppercase tracking-[0.3em] mb-3">
-                            The FixMyCar Blog
+                            The FixMyCarHub Blog
                         </div>
                         <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] tracking-tighter max-w-5xl">
                             Car care,{" "}

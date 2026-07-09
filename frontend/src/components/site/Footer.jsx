@@ -18,12 +18,12 @@ export default function Footer() {
                                 <span className="absolute inset-0 -m-2 rounded-full bg-brand-yellow/50 blur-md scale-110" aria-hidden="true" />
                                 <img
                                     src={BRAND.logo}
-                                    alt="FixMyCar"
+                                    alt="FixMyCarHub"
                                     className="relative h-12 w-auto"
                                 />
                             </div>
                             <span className="font-display text-2xl font-bold">
-                                Fix<span className="text-brand-yellow">MyCar</span>
+                                Fix<span className="text-brand-yellow">MyCar</span>Hub
                             </span>
                         </div>
                         <p className="text-white/60 text-sm max-w-xs leading-relaxed">
@@ -232,7 +232,7 @@ export default function Footer() {
 
                 <div className="mt-14 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
                     <p>
-                        © {new Date().getFullYear()} FixMyCar. All rights reserved.
+                        © {new Date().getFullYear()} FixMyCarHub. All rights reserved.
                     </p>
                     <div className="flex flex-wrap items-center gap-4">
                         <a href="#" className="hover:text-brand-yellow">

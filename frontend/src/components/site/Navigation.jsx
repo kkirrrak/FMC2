@@ -52,12 +52,12 @@ export default function Navigation() {
                             <span className="absolute inset-0 -m-1.5 rounded-full bg-brand-yellow/50 blur-md scale-110" aria-hidden="true" />
                             <img
                                 src={BRAND.logo}
-                                alt="FixMyCar"
+                                alt="FixMyCarHub"
                                 className="relative h-full w-auto object-contain"
                             />
                         </div>
                         <span className="hidden sm:block font-display font-bold text-white text-lg md:text-xl tracking-tight">
-                            Fix<span className="text-brand-yellow">MyCar</span>
+                            Fix<span className="text-brand-yellow">MyCar</span>Hub
                         </span>
                     </Link>
 
@@ -148,7 +148,7 @@ export default function Navigation() {
                                             <span className="absolute inset-0 -m-1.5 rounded-full bg-brand-yellow/50 blur-md scale-110" aria-hidden="true" />
                                             <img
                                                 src={BRAND.logo}
-                                                alt="FixMyCar"
+                                                alt="FixMyCarHub"
                                                 className="relative h-10 w-auto"
                                             />
                                         </div>

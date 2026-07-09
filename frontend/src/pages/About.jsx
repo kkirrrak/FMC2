@@ -6,8 +6,8 @@ import useSeo from "@/lib/useSeo";
 
 export default function About() {
     useSeo({
-        title: "About FixMyCar — Trusted Doorstep Car Repair in Hyderabad",
-        description: "FixMyCar is Hyderabad's certified doorstep car care team — transparent pricing, factory-trained mechanics and 24×7 roadside assistance trusted by 1000+ car owners.",
+        title: "About FixMyCarHub — Trusted Doorstep Car Repair in Hyderabad",
+        description: "FixMyCarHub is Hyderabad's certified doorstep car care team — transparent pricing, factory-trained mechanics and 24×7 roadside assistance trusted by 1000+ car owners.",
         keywords: "about fixmycar, car repair company hyderabad, doorstep mechanic hyderabad, trusted car service hyderabad",
         path: "/about",
     });
@@ -27,7 +27,7 @@ export default function About() {
                 <div className="max-w-7xl mx-auto relative">
                     <Reveal>
                         <div className="text-brand-yellow text-xs uppercase tracking-[0.3em] mb-3">
-                            About FixMyCar
+                            About FixMyCarHub
                         </div>
                         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.95] tracking-tighter max-w-5xl">
                             A luxury standard for{" "}
@@ -37,7 +37,7 @@ export default function About() {
                             </span>
                         </h1>
                         <p className="mt-6 text-white/70 max-w-2xl text-lg leading-relaxed">
-                            FixMyCar was built by automotive engineers to give
+                            FixMyCarHub was built by automotive engineers to give
                             Hyderabad drivers what they never had — an honest,
                             transparent, doorstep-first car service you can actually
                             trust.

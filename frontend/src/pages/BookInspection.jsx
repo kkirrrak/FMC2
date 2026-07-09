@@ -6,7 +6,7 @@ import useSeo from "@/lib/useSeo";
 
 export default function BookInspection() {
     useSeo({
-        title: "Book ₹599 Car Inspection in Hyderabad — FixMyCar",
+        title: "Book ₹599 Car Inspection in Hyderabad — FixMyCarHub",
         description: "Book a flat ₹599 doorstep car inspection in Hyderabad in 30 seconds. Instant WhatsApp confirmation, certified mechanics and a transparent written quote before any repair.",
         keywords: "book car inspection hyderabad, car inspection near me, doorstep car checkup, ₹599 car inspection",
         path: "/book",

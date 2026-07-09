@@ -11,8 +11,8 @@ import useSeo from "@/lib/useSeo";
 
 export default function Gallery() {
     useSeo({
-        title: "Gallery — Real Car Repairs & Doorstep Service | FixMyCar",
-        description: "See real before-after photos of car repairs, detailing, ceramic coating and roadside rescues completed by FixMyCar across Hyderabad.",
+        title: "Gallery — Real Car Repairs & Doorstep Service | FixMyCarHub",
+        description: "See real before-after photos of car repairs, detailing, ceramic coating and roadside rescues completed by FixMyCarHub across Hyderabad.",
         keywords: "car repair gallery hyderabad, before after car repair, ceramic coating photos, car detailing photos hyderabad",
         path: "/gallery",
     });

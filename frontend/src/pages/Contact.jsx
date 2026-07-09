@@ -26,8 +26,8 @@ const initial = {
 
 export default function Contact() {
     useSeo({
-        title: "Contact FixMyCar — Car Repair & Roadside Assistance in Hyderabad",
-        description: "Get in touch with FixMyCar for car repair bookings, roadside assistance, fleet enquiries and support. Call, WhatsApp or fill the contact form — we respond fast.",
+        title: "Contact FixMyCarHub — Car Repair & Roadside Assistance in Hyderabad",
+        description: "Get in touch with FixMyCarHub for car repair bookings, roadside assistance, fleet enquiries and support. Call, WhatsApp or fill the contact form — we respond fast.",
         keywords: "contact fixmycar, car service hyderabad contact, car repair enquiry, roadside assistance contact",
         path: "/contact",
     });
@@ -281,7 +281,7 @@ export default function Contact() {
                 <div className="max-w-7xl mx-auto">
                     <div className="rounded-3xl overflow-hidden border border-white/10 aspect-[16/8] bg-black">
                         <iframe
-                            title="FixMyCar Location"
+                            title="FixMyCarHub Location"
                             src="https://www.google.com/maps?q=Hyderabad,%20Telangana&output=embed"
                             className="w-full h-full grayscale contrast-125"
                             loading="lazy"

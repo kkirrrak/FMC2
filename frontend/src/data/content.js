@@ -95,7 +95,7 @@ export const TESTIMONIALS = [
         city: "Banjara Hills",
         rating: 5,
         photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
-        text: "My car broke down at midnight on ORR. FixMyCar reached in 22 minutes and had me driving again in under an hour. Genuinely impressed.",
+        text: "My car broke down at midnight on ORR. FixMyCarHub reached in 22 minutes and had me driving again in under an hour. Genuinely impressed.",
         car: "BMW 5 Series",
     },
     {
@@ -145,5 +145,5 @@ export const TIMELINE = [
     { year: "2020", title: "First Workshop", text: "Opened our flagship workshop in Hyderabad with a promise: no repair without customer approval." },
     { year: "2022", title: "24×7 SOS Fleet", text: "Launched round-the-clock roadside assistance with a dedicated tow-and-repair fleet." },
     { year: "2024", title: "5,000+ Happy Customers", text: "Certified as a preferred partner for major insurers and corporate fleets." },
-    { year: "2026", title: "The FixMyCar App", text: "Rebuilt the booking experience for a cinematic, WhatsApp-native workflow you're using right now." },
+    { year: "2026", title: "The FixMyCarHub App", text: "Rebuilt the booking experience for a cinematic, WhatsApp-native workflow you're using right now." },
 ];

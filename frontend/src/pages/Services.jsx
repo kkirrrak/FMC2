@@ -9,8 +9,8 @@ import useSeo from "@/lib/useSeo";
 
 export default function Services() {
     useSeo({
-        title: "All Car Repair Services in Hyderabad — FixMyCar",
-        description: "Browse every car service FixMyCar offers in Hyderabad: emergency roadside assistance, mechanical repairs, AC service, denting-painting, detailing, ceramic coating and more — all at your doorstep.",
+        title: "All Car Repair Services in Hyderabad — FixMyCarHub",
+        description: "Browse every car service FixMyCarHub offers in Hyderabad: emergency roadside assistance, mechanical repairs, AC service, denting-painting, detailing, ceramic coating and more — all at your doorstep.",
         keywords: "car repair services hyderabad, car ac service, car denting painting, ceramic coating hyderabad, car detailing hyderabad, mechanic near me",
         path: "/services",
     });

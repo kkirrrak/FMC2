@@ -32,7 +32,7 @@ export default function ServiceDetail() {
 
     useSeo({
         title: service
-            ? `${service.name} in Hyderabad — Doorstep ${category.title} | FixMyCar`
+            ? `${service.name} in Hyderabad — Doorstep ${category.title} | FixMyCarHub`
             : undefined,
         description: service
             ? `Book ${service.name.toLowerCase()} at your doorstep in Hyderabad. Certified mechanics, transparent ₹599 inspection, genuine parts and warranty on eligible repairs. ${category.blurb}`
@@ -114,7 +114,7 @@ export default function ServiceDetail() {
                                 Book This Service <ArrowRight size={16} />
                             </a>
                             <button
-                                onClick={() => openWhatsApp(`Hello FixMyCar, I'd like to book: ${service.name}. Please share the earliest slot.`)}
+                                onClick={() => openWhatsApp(`Hello FixMyCarHub, I'd like to book: ${service.name}. Please share the earliest slot.`)}
                                 data-testid="service-whatsapp-btn"
                                 aria-label="WhatsApp"
                                 className="inline-flex items-center justify-center w-11 h-11 md:w-auto md:h-auto md:gap-2 bg-[#25D366] text-white font-semibold rounded-full md:px-6 md:py-4 hover:bg-[#20b957] transition"
@@ -144,7 +144,7 @@ export default function ServiceDetail() {
                             About this service
                         </div>
                         <h2 className="font-display text-3xl md:text-5xl font-bold leading-[0.95] mb-6">
-                            Why choose FixMyCar for {service.name}?
+                            Why choose FixMyCarHub for {service.name}?
                         </h2>
                         <p className="text-white/70 text-lg leading-relaxed">
                             Our {service.name.toLowerCase()} process is designed for

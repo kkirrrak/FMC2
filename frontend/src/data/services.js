@@ -1,4 +1,4 @@
-// FixMyCar Services catalogue
+// FixMyCarHub Services catalogue
 // Categories, each with sub-services. Each sub-service has slug + description used on detail page.
 
 export const SERVICE_CATEGORIES = [

@@ -1,6 +1,6 @@
-// FixMyCar brand constants
+// FixMyCarHub brand constants
 export const BRAND = {
-    name: "FixMyCar",
+    name: "FixMyCarHub",
     tagline: "Expert Care For Your Ride",
     phone: "+91 9281410305",
     phoneRaw: "919281410305",
@@ -26,7 +26,7 @@ export const openWhatsApp = (message) => {
 
 export const buildBookingMessage = (data) => {
     const lines = [
-        "Hello FixMyCar 👋",
+        "Hello FixMyCarHub 👋",
         "",
         "I'd like to book a service. Details below:",
         "",
@@ -61,7 +61,7 @@ export const buildBookingMessage = (data) => {
     return lines.join("\n");
 };
 
-export const buildSosMessage = () => `Hello FixMyCar 🚨
+export const buildSosMessage = () => `Hello FixMyCarHub 🚨
 
 My vehicle has broken down.
 I need roadside assistance immediately.
@@ -74,7 +74,7 @@ Please send a mechanic urgently.`;
 
 export const buildContactMessage = (data) => {
     const lines = [
-        "Hello FixMyCar 👋",
+        "Hello FixMyCarHub 👋",
         "",
         `• Name: ${data.name || "-"}`,
         `• Mobile: ${data.mobile || "-"}`,

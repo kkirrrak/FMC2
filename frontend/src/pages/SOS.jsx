@@ -7,8 +7,8 @@ import useSeo from "@/lib/useSeo";
 
 export default function SOS() {
     useSeo({
-        title: "24×7 Emergency Roadside Assistance in Hyderabad — FixMyCar SOS",
-        description: "Broken down in Hyderabad? FixMyCar's SOS unit reaches you in an average of 30 minutes — 24×7 towing, battery jump start, flat tyre and accident recovery.",
+        title: "24×7 Emergency Roadside Assistance in Hyderabad — FixMyCarHub SOS",
+        description: "Broken down in Hyderabad? FixMyCarHub's SOS unit reaches you in an average of 30 minutes — 24×7 towing, battery jump start, flat tyre and accident recovery.",
         keywords: "roadside assistance hyderabad, car breakdown help, emergency car repair hyderabad, towing hyderabad, battery jump start near me",
         path: "/sos",
     });
@@ -142,7 +142,7 @@ export default function SOS() {
                             Send this to us on WhatsApp
                         </h2>
                         <div className="glass rounded-3xl p-6 md:p-8 whitespace-pre-line text-white/80 leading-relaxed">
-{`Hello FixMyCar 🚨
+{`Hello FixMyCarHub 🚨
 
 My vehicle has broken down.
 I need roadside assistance immediately.
