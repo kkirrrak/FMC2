@@ -1,0 +1,29 @@
+{
+  "summary": "Bug-fix verification (iteration 2) for FixMyCar site. All three bug fixes verified end-to-end and full regression passed. Backend: 13/13 pytest tests pass on /api/, /api/bookings (create minimal/full/validation/list), /api/contacts (create/validation/list). Frontend: (1) new logo asset renders successfully — <img> naturalWidth=1536, naturalHeight=1024, complete=true, no broken image icon. Favicon also uses same asset. (2) phone number '9281410305' is confirmed ABSENT from document.body.innerText on all requested non-contact routes: /, /sos, /about, /gallery, /services, /services/battery-jump-start, /book. On /contact the number '+91 9281410305' IS present in the Phone tile as required. (3) 'Made by iDesign4u' badge (#emergent-badge) is visible, text exactly 'Made by iDesign4u', no 'Emergent' text, position:fixed, bottom:16px, left:16px, right computed to auto (large px offset — not overriding), background is linear-gradient with rgb(109,40,217) → rgb(168,85,247) purple. Regression flows: nav-book-btn / nav-sos-btn / nav-whatsapp-btn / nav-call-btn present on desktop nav; sos-big-call present on /sos; Contact form submits successfully and shows 'Message received' toast; Booking form on /book (data-testids input-name, input-mobile, submit-booking) submits and reaches data-testid='booking-success' state (server accepts POST /api/bookings and UI redirects to WhatsApp).",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "POST /api/bookings, POST /api/contacts", "issue": "Missing required fields return 422 (Pydantic default) rather than the 400 that the handler's manual check would emit. Handler's 400 branch only fires when fields are present but empty strings. Behavior unchanged from iteration 1; front-end unaffected."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": ["/app/backend/tests/test_fixmycar_api.py", "/app/test_reports/pytest/pytest_results.xml"],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "public/index.html badge inline styles use !important on background/position/bottom but 'left: 16px' is missing !important — currently works because no other rule targets it, but consider adding !important for parity with other layout props to make the fix bulletproof against future overrides.",
+    "brand.js still exports BRAND.phone = '+91 9281410305' and phoneRaw = '919281410305' — this is correct because WhatsApp/Call links legitimately need the raw number; the fix only removed the visible text. Ensure future components using BRAND.phone as visible text add a Contact-page-only guard.",
+    "Consider adding an ESLint/CI check or a Cypress regression assertion to prevent the raw digit string '9281410305' from reappearing in any page markup outside /contact."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "test_credentials": "N/A — no auth in this app",
+  "seed_data_creation": "Additional TEST_ rows created during regression: booking TEST_UI_Booker2 (mobile 9333444555), contact TEST_UI_Contact (mobile 9111222333). Safe to leave or delete.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All three targeted bug fixes verified: (a) BRAND.logo swap renders with natural dimensions >0; (b) phone number scrubbed from all non-contact routes but retained on /contact; (c) 'Made by iDesign4u' purple gradient badge is at bottom-left. Booking form uses data-testid='input-name', 'input-mobile', 'submit-booking', 'booking-success' — note earlier iteration referenced 'booking-name/mobile/submit' which do NOT exist. Backend regression file: /app/backend/tests/test_fixmycar_api.py (13 tests, run: pytest /app/backend/tests/test_fixmycar_api.py -v). If retesting the badge, note computed 'right' will be a large pixel value because bottom-left overrides right — verify via style.right in inline attribute (unset) rather than getComputedStyle(right).",
+  "rca of the issue": "N/A — verification of prior fixes, no new bug found."
+}

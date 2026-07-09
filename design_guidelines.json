@@ -1,0 +1,135 @@
+{
+  "theme": "dark",
+  "design_language": "Premium, Cinematic, Luxury, Minimal, Modern, Automotive, High-end",
+  "typography": {
+    "headings": {
+      "font_family": "'Bricolage Grotesque', sans-serif",
+      "weights": [600, 700, 800],
+      "style_notes": "Use for all H1-H4. Emphasizes modern luxury automotive aesthetics. Keep tracking tight (`tracking-tighter`) for H1/H2.",
+      "import_url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&display=swap"
+    },
+    "body": {
+      "font_family": "'Manrope', sans-serif",
+      "weights": [400, 500, 600],
+      "style_notes": "Clean, highly readable, geometric sans for technical/luxury feel.",
+      "import_url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+    }
+  },
+  "colors": {
+    "background": {
+      "base": "#050505",
+      "surface": "#111111",
+      "surface_elevated": "#1A1A1A"
+    },
+    "brand": {
+      "accent": "#FFD500",
+      "accent_hover": "#E5C000",
+      "accent_glow": "rgba(255, 213, 0, 0.3)"
+    },
+    "text": {
+      "primary": "#F5F5F7",
+      "secondary": "#A1A1AA",
+      "inverse": "#000000"
+    },
+    "utility": {
+      "sos": "#DC2626",
+      "whatsapp": "#25D366",
+      "border": "rgba(255, 255, 255, 0.08)",
+      "border_highlight": "rgba(255, 255, 255, 0.15)"
+    }
+  },
+  "glassmorphism_tokens": {
+    "heavy": "backdrop-blur-2xl bg-black/60 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+    "medium": "backdrop-blur-xl bg-black/40 border border-white/5",
+    "light": "backdrop-blur-md bg-white/5 border border-white/10"
+  },
+  "components": {
+    "navigation": {
+      "type": "floating_pill",
+      "desktop": "fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl rounded-full backdrop-blur-xl bg-black/50 border border-white/10 z-50 flex items-center justify-between px-8 py-4 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.8)]",
+      "mobile": "fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] rounded-2xl backdrop-blur-xl bg-black/80 border border-white/10 z-50 flex justify-around p-4",
+      "notes": "NO Bootstrap navbar. NO transparent background without blur. NO hamburger on desktop. Include Logo, Nav links, and SOS/WhatsApp CTA."
+    },
+    "buttons": {
+      "primary": "bg-[#FFD500] text-black font-bold px-8 py-4 rounded-full hover:bg-[#E5C000] hover:shadow-[0_0_20px_rgba(255,213,0,0.4)] transition-all",
+      "ghost": "bg-transparent border border-white/20 text-white px-8 py-4 rounded-full hover:bg-white/5 transition-all",
+      "sos": "bg-red-600 text-white font-bold px-6 py-3 rounded-full animate-pulse shadow-[0_0_15px_rgba(220,38,38,0.5)]",
+      "whatsapp": "bg-[#25D366] text-white font-bold px-6 py-3 rounded-full flex items-center gap-2 hover:bg-[#1DA851]"
+    },
+    "cards": {
+      "service": "group relative overflow-hidden rounded-2xl bg-[#111111] border border-white/5 p-6 hover:border-[#FFD500]/30 transition-colors duration-500",
+      "testimonial": "rounded-2xl p-8 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] border border-white/10 relative"
+    }
+  },
+  "layouts": {
+    "hero": "h-screen w-full relative flex items-center justify-center overflow-hidden",
+    "services_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6",
+    "gallery_masonry": "columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4",
+    "timeline": "relative border-l border-white/10 ml-6 pl-8 space-y-12"
+  },
+  "motion": {
+    "hero_ken_burns": "scale-100 hover:scale-110 transition-transform duration-[20s] ease-out",
+    "stagger_children": "Framer Motion: { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.1 } } }",
+    "hover_glow": "opacity-0 group-hover:opacity-100 transition-opacity duration-500 absolute inset-0 bg-radial-gradient from-[#FFD500]/10 to-transparent",
+    "parallax": "Use framer-motion useScroll to move background images slightly slower than foreground content"
+  },
+  "visual_enhancers": {
+    "particles": "Use lightweight canvas or react-tsparticles for subtle floating dust/sparks in hero section to give a workshop atmosphere.",
+    "headlight_glow": "Absolute positioned divs with `w-[600px] h-[600px] bg-white/5 blur-[120px] rounded-full mix-blend-screen` placed strategically behind cars or text.",
+    "vignette": "Overlay `bg-radial-gradient from-transparent to-black/80` on hero images for cinematic focus."
+  },
+  "image_urls": {
+    "hero_main": {
+      "url": "https://images.unsplash.com/photo-1619692460304-67fd2b1e436d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXIlMjBkYXJrJTIwZ2FyYWdlfGVufDB8fHx8MTc4MzU0Nzk0MHww&ixlib=rb-4.1.0&q=85",
+      "description": "Silver Mercedes Benz in dark cinematic garage"
+    },
+    "hero_alt": {
+      "url": "https://images.unsplash.com/photo-1769641241120-f0dd8669b12d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBjYXIlMjBkYXJrJTIwZ2FyYWdlfGVufDB8fHx8MTc4MzU0Nzk0MHww&ixlib=rb-4.1.0&q=85",
+      "description": "Black luxury SUV in a dark garage"
+    },
+    "mechanic_working": {
+      "url": "https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Professional mechanic inspecting car in auto repair shop"
+    },
+    "engine_service": {
+      "url": "https://images.unsplash.com/photo-1725289339928-06ee31684df5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxjYXIlMjBlbmdpbmV8ZW58MHx8fHwxNzgzNTQ3OTQwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "The engine compartment of a car with the hood up"
+    },
+    "brakes_service": {
+      "url": "https://images.unsplash.com/photo-1696494561430-de087dd0bd69?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxjYXIlMjBicmFrZXN8ZW58MHx8fHwxNzgzNTQ3OTQwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Close up of a brake on a vehicle"
+    },
+    "tires_service": {
+      "url": "https://images.pexels.com/photos/18372024/pexels-photo-18372024.jpeg",
+      "description": "Detailed monochrome shot of a black sports car wheel"
+    },
+    "cleaning_service": {
+      "url": "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwzfHxjYXIlMjB3YXNoaW5nfGVufDB8fHx8MTc4MzU0NzkzOXww&ixlib=rb-4.1.0&q=85",
+      "description": "Water splash on black coupe during car wash"
+    },
+    "tow_truck_sos": {
+      "url": "https://images.pexels.com/photos/8931963/pexels-photo-8931963.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Tow truck night rescue in urban environment"
+    }
+  },
+  "instructions_to_main_agent": {
+    "architecture": "Build a React + Tailwind + Vite (or Next.js if configured) frontend. Use Framer Motion heavily for scroll reveals, Ken Burns, and parallax.",
+    "pricing_rule": "CRITICAL: NEVER show repair prices. ONLY show 'Inspection Charge ₹599 Fixed (Home/Roadside/Garage)'.",
+    "booking_flow": "Booking forms must capture (Name, Mobile, Car Details, Location, Issue) and ON SUBMIT redirect to WhatsApp (+91 9281410305) with a prefilled message.",
+    "sos_flow": "SOS Button must be prominently pulsating red and immediately redirect to call or WhatsApp +91 9281410305.",
+    "pages_required": "Home, Services (Grid + 10 Individual Pages), SOS, Gallery, About, Contact",
+    "logo": "Use user uploaded logo or build a placeholder `span` with text 'FIXMYCAR' and yellow wrench icon until real asset is placed. Make it large in the hero/header.",
+    "icons": "Use `lucide-react` for clean, modern iconography. Do NOT use emojis.",
+    "mobile_nav": "Hide desktop pill nav on mobile. Use a premium bottom navigation bar fixed to bottom, mimicking iOS standard app navs."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "DO NOT output generic centered 'AI slop'. Embrace asymmetry, wide generous padding (e.g., py-24, py-32), and strong left-alignments.",
+    "Never use purely transparent backgrounds on elements that scroll over text/images (like headers). Use backdrop-blur combined with semi-transparent colors (e.g., bg-black/60).",
+    "All interactive elements (buttons, inputs, links) MUST include a 'data-testid' attribute (e.g., data-testid='sos-button').",
+    "NEVER use emojis as icons. Use Lucide React.",
+    "Add 'transition-all duration-300' and distinct ':hover' states to every interactive element.",
+    "Layer text over images safely by injecting 'bg-black/40' or gradient overlays to ensure APCA/WCAG contrast compliance.",
+    "Do not add '.App { text-align: center }'. Let text flow naturally.",
+    "Use 'sonner' for toast notifications (e.g., upon form validation failure before WhatsApp redirect)."
+  ]
+}
