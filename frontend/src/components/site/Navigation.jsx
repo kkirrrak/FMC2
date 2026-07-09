@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { BRAND, openWhatsApp, buildSosMessage } from "@/lib/brand";
-import { Phone, Siren, Home as HomeIcon, Wrench, ImageIcon, Info, Mail, Calendar, Menu, BookOpen } from "lucide-react";
+import { Phone, Siren, Home as HomeIcon, Wrench, ImageIcon, Info, Mail, Menu, BookOpen } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import WhatsAppIcon from "@/components/site/WhatsAppIcon";
 import { Button } from "@/components/ui/button";
@@ -47,7 +47,7 @@ export default function Navigation() {
                         className="flex items-center gap-2 group shrink-0"
                     >
                         <div
-                            className={`relative flex items-center justify-center transition-all duration-500 ${scrolled ? "h-9 md:h-10" : "h-10 md:h-12"} w-auto`}
+                            className={`relative flex items-center justify-center transition-all duration-500 ${scrolled ? "h-12 md:h-14" : "h-14 md:h-16"} w-auto`}
                         >
                             <span className="absolute inset-0 -m-1.5 rounded-full bg-brand-yellow/50 blur-md scale-110" aria-hidden="true" />
                             <img
@@ -100,12 +100,9 @@ export default function Navigation() {
                             onClick={() => openWhatsApp(buildSosMessage())}
                             title="WhatsApp"
                             aria-label="WhatsApp"
-                            className="hidden sm:inline-flex items-center gap-2 px-3 py-2 rounded-full text-[#25D366] hover:bg-[#25D366]/15 border border-[#25D366]/30 transition"
+                            className="hidden sm:inline-flex items-center justify-center w-10 h-10 rounded-full text-[#25D366] hover:bg-[#25D366]/15 border border-[#25D366]/30 transition"
                         >
-                            <WhatsAppIcon size={16} />
-                            <span className="hidden xl:inline text-sm">
-                                WhatsApp
-                            </span>
+                            <WhatsAppIcon size={18} />
                         </button>
                         <Link
                             to="/sos"
@@ -115,13 +112,6 @@ export default function Navigation() {
                         >
                             <Siren size={16} />
                             <span className="hidden md:inline">SOS</span>
-                        </Link>
-                        <Link
-                            to="/book"
-                            data-testid="nav-book-btn"
-                            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-yellow text-white hover:bg-red-600 transition font-semibold text-sm btn-sweep"
-                        >
-                            <span>Book Inspection</span>
                         </Link>
 
                         {/* Mobile menu */}
@@ -178,14 +168,6 @@ export default function Navigation() {
                                                 {l.label}
                                             </NavLink>
                                         ))}
-                                        <NavLink
-                                            to="/book"
-                                            data-testid="mobile-nav-book"
-                                            className="flex items-center gap-3 px-4 py-3 rounded-2xl mt-2 bg-brand-yellow text-white font-bold text-lg"
-                                        >
-                                            <Calendar size={20} />
-                                            Book Inspection
-                                        </NavLink>
                                     </nav>
                                     <div className="flex items-center justify-center gap-3 pt-6 border-t border-white/10">
                                         <a

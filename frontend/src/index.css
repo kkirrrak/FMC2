@@ -121,6 +121,13 @@ h6,
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
+/* Dark-theme card — default card style, black background throughout the site */
+.card-dark {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
 /* Red glow */
 .glow-yellow {
     box-shadow: 0 0 40px rgba(227, 34, 38, 0.4),

@@ -130,14 +130,12 @@ export default function Home() {
                         </h1>
                     </Reveal>
                     <Reveal delay={0.2}>
-                        <p className="mt-4 md:mt-6 text-sm md:text-lg text-white/70 max-w-lg leading-relaxed">
-                            Fast <span className="text-brand-yellow">•</span>{" "}
-                            Reliable <span className="text-brand-yellow">•</span>{" "}
-                            Certified
+                        <p className="mt-3 md:mt-6 text-sm md:text-lg text-white/70 max-w-lg leading-relaxed">
+                            Fast, reliable & certified — right at your door.
                         </p>
                     </Reveal>
                     <Reveal delay={0.3}>
-                        <div className="mt-6 md:mt-8 flex flex-wrap items-center gap-2 md:gap-3">
+                        <div className="mt-5 md:mt-8 flex flex-wrap items-center gap-2 md:gap-3">
                             <Link
                                 to="/book"
                                 data-testid="hero-book-btn"
@@ -150,7 +148,8 @@ export default function Home() {
                                 to="/sos"
                                 data-testid="hero-sos-btn"
                                 aria-label="Emergency SOS"
-                                className="hidden md:inline-flex items-center gap-2 bg-red-600 text-white font-bold rounded-full px-4 md:px-6 py-3 md:py-4 hover:bg-red-500 transition shadow-[0_0_30px_rgba(220,38,38,0.35)] text-sm md:text-base"
+                                title="Emergency SOS"
+                                className="inline-flex items-center justify-center w-11 h-11 md:w-auto md:h-auto md:gap-2 bg-red-600 text-white font-bold rounded-full md:px-6 md:py-4 hover:bg-red-500 transition shadow-[0_0_30px_rgba(220,38,38,0.35)] text-sm md:text-base"
                             >
                                 <Siren size={16} />
                                 <span className="hidden md:inline">Emergency SOS</span>
@@ -159,24 +158,22 @@ export default function Home() {
                                 onClick={() => openWhatsApp(buildSosMessage())}
                                 data-testid="hero-whatsapp-btn"
                                 aria-label="WhatsApp"
-                                className="hidden md:inline-flex items-center justify-center md:w-auto md:h-auto md:gap-2 bg-[#25D366] text-white font-semibold rounded-full md:px-6 md:py-4 hover:bg-[#20b957] transition"
+                                title="WhatsApp"
+                                className="inline-flex items-center justify-center w-11 h-11 md:w-auto md:h-auto md:gap-2 bg-[#25D366] text-white font-semibold rounded-full md:px-6 md:py-4 hover:bg-[#20b957] transition"
                             >
-                                <WhatsAppIcon size={20} />
-                                <span className="hidden md:inline">WhatsApp</span>
+                                <WhatsAppIcon size={18} />
                             </button>
                             <a
                                 href={`tel:${BRAND.phoneRaw}`}
                                 data-testid="hero-call-btn"
                                 aria-label="Call Now"
-                                className="hidden md:inline-flex items-center justify-center md:w-auto md:h-auto md:gap-2 border border-white/15 text-white rounded-full md:px-6 md:py-4 hover:bg-white/5 transition"
+                                title="Call Now"
+                                className="inline-flex items-center justify-center w-11 h-11 md:w-auto md:h-auto md:gap-2 border border-white/15 text-white rounded-full md:px-6 md:py-4 hover:bg-white/5 transition"
                             >
                                 <Phone size={18} />
                                 <span className="hidden md:inline">Call Now</span>
                             </a>
                         </div>
-                        <p className="md:hidden mt-3 text-xs text-white/50">
-                            Need urgent help? SOS, WhatsApp & Call are in the menu above ↑
-                        </p>
                     </Reveal>
 
                     {/* Stats strip — desktop only inside hero, moved below hero on mobile so the car photo shows in full */}
@@ -211,16 +208,16 @@ export default function Home() {
             </section>
 
             {/* HERO STATS — mobile only, placed below the hero so the car photo is in full view */}
-            <section className="md:hidden px-6 pt-8 pb-2">
-                <div className="grid grid-cols-2 gap-3">
+            <section className="md:hidden px-6 pt-5 pb-2">
+                <div className="grid grid-cols-2 gap-1.5">
                     {HERO_STATS.map((s, i) => (
                         <div
                             key={i}
-                            className="glass rounded-2xl p-3"
+                            className="glass rounded-xl p-1.5"
                             data-testid={`hero-stat-mobile-${i}`}
                         >
-                            <s.icon size={18} className="text-brand-yellow mb-2" />
-                            <div className="font-display text-xl font-extrabold">
+                            <s.icon size={12} className="text-brand-yellow mb-1" />
+                            <div className="font-display text-sm font-extrabold">
                                 {typeof s.v === "string" && /\d/.test(s.v) ? (
                                     <StatCounter value={s.v} />
                                 ) : (
@@ -228,7 +225,7 @@ export default function Home() {
                                 )}
                                 {s.suffix || ""}
                             </div>
-                            <div className="text-white/60 text-[10px] mt-0.5">
+                            <div className="text-white/60 text-[8px] mt-0.5 leading-tight">
                                 {s.l}
                             </div>
                         </div>
@@ -237,8 +234,8 @@ export default function Home() {
             </section>
 
             {/* MARQUEE STRIP */}
-            <section className="border-y border-gray-200 bg-gray-50 py-4 overflow-hidden">
-                <div className="marquee-track gap-16 whitespace-nowrap text-brand-black/50 text-sm uppercase tracking-widest">
+            <section className="border-y border-white/10 bg-black py-4 overflow-hidden">
+                <div className="marquee-track gap-16 whitespace-nowrap text-white/50 text-sm uppercase tracking-widest">
                     {Array.from({ length: 2 }).map((_, r) => (
                         <div key={r} className="flex items-center gap-16 pr-16">
                             {[
@@ -262,7 +259,7 @@ export default function Home() {
             </section>
 
             {/* SERVICES */}
-            <section className="relative py-24 md:py-32 px-6 bg-white text-brand-black">
+            <section className="relative py-24 md:py-32 px-6 bg-black text-white">
                 <div className="max-w-7xl mx-auto">
                     <Reveal>
                         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -270,14 +267,14 @@ export default function Home() {
                                 <Eyebrow>01 — Services</Eyebrow>
                                 <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95] max-w-3xl">
                                     Every service your car will{" "}
-                                    <span className="italic text-brand-black/60">ever</span>{" "}
+                                    <span className="italic text-white/60">ever</span>{" "}
                                     need.
                                 </h2>
                             </div>
                             <Link
                                 to="/services"
                                 data-testid="home-view-all-services"
-                                className="inline-flex self-start md:self-end items-center gap-2 text-brand-black/70 hover:text-brand-yellow transition"
+                                className="inline-flex self-start md:self-end items-center gap-2 text-white/70 hover:text-brand-yellow transition"
                             >
                                 View all services <ArrowRight size={16} />
                             </Link>
@@ -294,13 +291,13 @@ export default function Home() {
             </section>
 
             {/* WORKING PROCESS */}
-            <section className="relative py-24 md:py-32 px-6 bg-gray-50 border-y border-gray-200 overflow-hidden">
+            <section className="relative py-24 md:py-32 px-6 bg-brand-charcoal/40 border-y border-white/5 overflow-hidden">
                 <div className="max-w-7xl mx-auto relative text-center">
                     <Reveal>
                         <Eyebrow className="!inline-flex mx-auto justify-center">
                             How It Works
                         </Eyebrow>
-                        <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95] text-brand-black">
+                        <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95] text-white">
                             From SOS to sorted{" "}
                             <span className="text-yellow-gradient">in four steps.</span>
                         </h2>
@@ -334,7 +331,7 @@ export default function Home() {
             </section>
 
             {/* PRICING TRANSPARENCY */}
-            <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-white text-brand-black">
+            <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-black text-white">
                 <div className="max-w-5xl mx-auto text-center relative">
                     <Reveal>
                         <Eyebrow className="!inline-flex mx-auto justify-center">
@@ -346,7 +343,7 @@ export default function Home() {
                             <span className="text-yellow-gradient">₹599 fixed.</span>{" "}
                             Everywhere.
                         </h2>
-                        <p className="text-brand-black/60 mt-6 max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-white/60 mt-6 max-w-2xl mx-auto leading-relaxed">
                             Whether the car is at home, on the roadside, in our garage,
                             your office or apartment — inspection is a flat ₹599.
                             Repairs are quoted transparently after inspection and
@@ -359,7 +356,7 @@ export default function Home() {
                                 (l) => (
                                     <div
                                         key={l}
-                                        className="card-light rounded-2xl py-4 px-2 text-sm text-brand-black/80"
+                                        className="card-dark rounded-2xl py-4 px-2 text-sm text-white/80"
                                     >
                                         <MapPin
                                             size={16}
@@ -372,7 +369,7 @@ export default function Home() {
                         </div>
                     </Reveal>
                     <Reveal delay={0.25}>
-                        <div className="mt-8 text-xs text-brand-black/45 max-w-xl mx-auto">
+                        <div className="mt-8 text-xs text-white/45 max-w-xl mx-auto">
                             Additional repair charges depend on parts, labour and
                             complexity. Customer approval is mandatory before any
                             repair begins.
@@ -382,13 +379,13 @@ export default function Home() {
             </section>
 
             {/* WHY CHOOSE US */}
-            <section className="relative py-24 md:py-32 px-6 bg-gray-50 border-y border-gray-200">
+            <section className="relative py-24 md:py-32 px-6 bg-brand-charcoal/40 border-y border-white/5">
                 <div className="max-w-7xl mx-auto">
                     <Reveal>
                         <Eyebrow>03 — Why FixMyCarHub</Eyebrow>
-                        <h2 className="font-display text-4xl md:text-6xl font-bold max-w-3xl leading-[0.95] text-brand-black">
+                        <h2 className="font-display text-4xl md:text-6xl font-bold max-w-3xl leading-[0.95] text-white">
                             Built for people who don’t{" "}
-                            <span className="italic text-brand-black/60">tolerate</span>{" "}
+                            <span className="italic text-white/60">tolerate</span>{" "}
                             surprises.
                         </h2>
                     </Reveal>
@@ -404,15 +401,15 @@ export default function Home() {
                             { icon: Zap, t: "Original Parts", d: "OEM parts by default — options if you prefer." },
                         ].map((b, i) => (
                             <Reveal key={i} delay={i * 0.05}>
-                                <div className="card-light rounded-2xl md:rounded-3xl p-3.5 md:p-6 h-full hover:border-brand-yellow/40 transition group">
+                                <div className="card-dark rounded-2xl md:rounded-3xl p-3.5 md:p-6 h-full hover:border-brand-yellow/40 transition group">
                                     <div className="w-9 h-9 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-brand-yellow/10 border border-brand-yellow/30 flex items-center justify-center text-brand-yellow group-hover:bg-brand-yellow group-hover:text-white transition">
                                         <b.icon size={18} className="md:hidden" />
                                         <b.icon size={22} className="hidden md:block" />
                                     </div>
-                                    <h3 className="font-display text-sm md:text-xl font-bold mt-3 md:mt-5 text-brand-black">
+                                    <h3 className="font-display text-sm md:text-xl font-bold mt-3 md:mt-5 text-white">
                                         {b.t}
                                     </h3>
-                                    <p className="text-brand-black/55 text-xs md:text-sm mt-1.5 md:mt-2 leading-relaxed">
+                                    <p className="text-white/55 text-xs md:text-sm mt-1.5 md:mt-2 leading-relaxed">
                                         {b.d}
                                     </p>
                                 </div>
@@ -423,7 +420,7 @@ export default function Home() {
             </section>
 
             {/* TESTIMONIALS */}
-            <section className="relative py-24 md:py-32 px-6 bg-white text-brand-black">
+            <section className="relative py-24 md:py-32 px-6 bg-black text-white">
                 <div className="max-w-7xl mx-auto">
                     <Reveal>
                         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -442,7 +439,7 @@ export default function Home() {
                             <Reveal key={i} delay={i * 0.05}>
                                 <div
                                     data-testid={`testimonial-${i}`}
-                                    className="card-light rounded-3xl p-6 md:p-7 h-full flex flex-col"
+                                    className="card-dark rounded-3xl p-6 md:p-7 h-full flex flex-col"
                                 >
                                     <div className="flex items-center gap-1 mb-4">
                                         {Array.from({ length: t.rating }).map((_, k) => (
@@ -453,20 +450,20 @@ export default function Home() {
                                             />
                                         ))}
                                     </div>
-                                    <p className="text-brand-black/75 text-base leading-relaxed flex-1">
+                                    <p className="text-white/75 text-base leading-relaxed flex-1">
                                         “{t.text}”
                                     </p>
                                     <div className="mt-6 flex items-center gap-3">
                                         <img
                                             src={t.photo}
                                             alt={t.name}
-                                            className="w-10 h-10 rounded-full object-cover border border-black/10"
+                                            className="w-10 h-10 rounded-full object-cover border border-white/10"
                                         />
                                         <div>
-                                            <div className="text-brand-black font-semibold text-sm">
+                                            <div className="text-white font-semibold text-sm">
                                                 {t.name}
                                             </div>
-                                            <div className="text-brand-black/45 text-xs">
+                                            <div className="text-white/45 text-xs">
                                                 {t.car} • {t.city}
                                             </div>
                                         </div>
@@ -479,12 +476,12 @@ export default function Home() {
             </section>
 
             {/* SERVICE AREAS */}
-            <section className="relative py-24 md:py-32 px-6 bg-gray-50 border-y border-gray-200">
+            <section className="relative py-24 md:py-32 px-6 bg-brand-charcoal/40 border-y border-white/5">
                 <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
                     <Reveal>
                         <div>
                             <Eyebrow>05 — Service Areas</Eyebrow>
-                            <h2 className="font-display text-4xl md:text-5xl font-bold leading-[0.95] text-brand-black">
+                            <h2 className="font-display text-4xl md:text-5xl font-bold leading-[0.95] text-white">
                                 Doorstep across{" "}
                                 <span className="text-yellow-gradient">
                                     Hyderabad
@@ -510,7 +507,7 @@ export default function Home() {
                                 ].map((a) => (
                                     <span
                                         key={a}
-                                        className="px-4 py-2 rounded-full border border-black/10 bg-white text-brand-black/75 text-sm"
+                                        className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-white/75 text-sm"
                                     >
                                         {a}
                                     </span>
@@ -519,7 +516,7 @@ export default function Home() {
                         </div>
                     </Reveal>
                     <Reveal delay={0.1}>
-                        <div className="rounded-3xl overflow-hidden border border-black/10 aspect-[4/3] bg-black">
+                        <div className="rounded-3xl overflow-hidden border border-white/10 aspect-[4/3] bg-black">
                             <iframe
                                 title="FixMyCarHub Service Areas"
                                 src="https://www.google.com/maps?q=Hyderabad,%20Telangana&output=embed"
@@ -576,13 +573,13 @@ export default function Home() {
             </section>
 
             {/* FAQ */}
-            <section className="relative py-24 md:py-32 px-6 bg-white text-brand-black">
+            <section className="relative py-24 md:py-32 px-6 bg-black text-white">
                 <div className="max-w-4xl mx-auto">
                     <Reveal>
                         <Eyebrow>07 — Frequently Asked</Eyebrow>
                         <h2 className="font-display text-4xl md:text-6xl font-bold leading-[0.95] mb-10">
                             Straight answers.{" "}
-                            <span className="italic text-brand-black/60">No fine print.</span>
+                            <span className="italic text-white/60">No fine print.</span>
                         </h2>
                     </Reveal>
                     <script
@@ -612,15 +609,15 @@ export default function Home() {
                             <AccordionItem
                                 key={i}
                                 value={`item-${i}`}
-                                className="card-light rounded-2xl px-5"
+                                className="card-dark rounded-2xl px-5"
                             >
                                 <AccordionTrigger
-                                    className="text-left text-brand-black font-semibold hover:no-underline py-5"
+                                    className="text-left text-white font-semibold hover:no-underline py-5"
                                     data-testid={`faq-trigger-${i}`}
                                 >
                                     {f.q}
                                 </AccordionTrigger>
-                                <AccordionContent className="text-brand-black/65 leading-relaxed pb-5">
+                                <AccordionContent className="text-white/65 leading-relaxed pb-5">
                                     {f.a}
                                 </AccordionContent>
                             </AccordionItem>
